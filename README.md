@@ -12,7 +12,7 @@ resource "azurerm_storage_account" "example" {
 }
 
 module "simple_module" {
-  source                = "./07-modules/simple-module"
+  source                = "Kagerou4649/resource_group_storage/azurerm"
   resource_group_name   = "specific-resource-group"
   storage_account_name  = "specificstorageaccount"
   location              = "West US"
