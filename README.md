@@ -2,6 +2,7 @@
 
 # This is a test module that demonstrates how to create a basic module using Terraform
 
+```hcl
 resource "azurerm_storage_account" "example" {
   name                     = var.storage_account_name
   resource_group_name      = azurerm_resource_group.example.name
@@ -16,6 +17,7 @@ module "simple_module" {
   storage_account_name  = "specificstorageaccount"
   location              = "West US"
 }
+```
 
 ## Inputs
 
