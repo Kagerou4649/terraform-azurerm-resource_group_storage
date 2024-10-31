@@ -11,8 +11,8 @@ resource "azurerm_storage_account" "example" {
   account_replication_type = "LRS"
 }
 
-module "simple_module" {
-  source                = "Kagerou4649/resource_group_storage/azurerm"
+module "resource_group_storage" {
+  source                = "Kagerou4649/resource_group_storage/terraform-azurerm-resource_group_storage"
   resource_group_name   = "specific-resource-group"
   storage_account_name  = "specificstorageaccount"
   location              = "West US"
