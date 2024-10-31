@@ -10,10 +10,3 @@ resource "azurerm_storage_account" "example" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 }
-
-module "simple_module" {
-  source                = "./07-modules/simple-module"
-  resource_group_name   = "specific-resource-group"
-  storage_account_name  = "specificstorageaccount"
-  location              = "West US"
-}
